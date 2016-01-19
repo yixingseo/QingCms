@@ -1,0 +1,147 @@
+
+/*基本*/
+body{font-family:"\5FAE\8F6F\96C5\9ED1","Microsoft Yahei","Hiragino Sans GB",tahoma,arial,"\5B8B\4F53";font-size:13px;}
+h1{font-size:20px;text-align:center;font-weight:bold}
+.help-block{display:none;}
+.has-error .help-block{display:block;color:red;}
+.panel-title{font-size:14px;}
+.box{padding-bottom:20px;}
+.box-header{padding:8px 0;}
+.box-title{}
+.box-body{padding-top:15px;line-height:2em;}
+
+.main,.header,.footer{}
+.main{padding:15px 0 0 0;}
+.header{}
+.footer{padding:15px;background:#DDD;}
+ul.news{margin:0;padding:0;list-style-type:none;}
+ul.news li{height:30px;line-height:30px;border-bottom:1px dotted #DDD;clear:both}
+ul.news li .date{float:right;color:#999;font-size:11px;}
+.newshot h3{font-size:16px;font-weight:bold;color:#06C;margin:0;padding:0 0 15px 0;}
+.ke-zeroborder{border:1px solid #DDD;}
+.ke-zeroborder td{border:1px solid #DDD;}
+
+.probox{text-align:center;padding-bottom:15px;}
+.probox img{max-width:220px;text-align:center;height:160px;}
+
+#gd{}
+#gd img{width:200px;height:150px;}
+#gd td{padding-right:10px;}
+
+
+/*导航*/
+
+
+.menu ul.dropdown-menu {margin:0;padding:0;min-width: 135px}
+.dropdown:hover .dropdown-menu {display: block;}
+.menu ul.dropdown-menu li{padding:0;background:#FFF;margin-right:0px;width:200px;}
+.dropdown-menu li a:link,.dropdown-menu li a:visited{color:#333;padding:7px 0;text-align:left;padding-left:15px;}
+
+.fnav{margin:0;padding:0;list-style-type:none;text-align:right;display:inline}
+.fnav li{display:inline;padding-right:5px;}
+
+/* 滚动 */ 
+.scroll_horizontal{position:relative;width:1140px;height:200px;background-color:#eee;margin-top:10px;}
+.scroll_horizontal .box{overflow:hidden;position:relative;width:1140px;height:200px;margin:0 auto;}
+.scroll_horizontal .list{overflow:hidden;width:9999px;list-style-type:none;margin:0;padding:0}
+.scroll_horizontal .list li{float:left;width:225px;}
+.scroll_horizontal .list li img{width:225px;height:200px;}
+.scroll_horizontal .prev,
+.scroll_horizontal .next{position:absolute;top:50%;margin-top:-25px;width:40px;height:50px;background-image:url(../images/control.png);background-repeat:no-repeat;font:0/0 Arial;cursor:pointer;}
+.scroll_horizontal .prev{left:5px;background-position:0 0;}
+.scroll_horizontal .next{right:5px;background-position:-40px 0;}
+.scroll_horizontal .prev:hover{background-position:0 -50px;}
+.scroll_horizontal .next:hover{background-position:-40px -50px;}
+
+/*幻灯片*/
+.main_image{width:100%;height:460px;overflow:hidden;margin:0 auto;position:relative;background-color:#eaeaea}
+.main_image ul{width:9999px;height:460px;overflow:hidden;position:absolute;top:0;left:0}
+.main_image li{float:left;width:100%;height:460px}
+.main_image li span{display:block;width:100%;height:460px}
+.main_image li a{display:block;width:100%;height:460px}
+.main_image li .img_1{background:url('../images/01.jpg') center top no-repeat}
+.main_image li .img_2{background:url('../images/02.jpg') center top no-repeat}
+.main_image li .img_3{background:url('../images/03.jpg') center top no-repeat}
+div.flicking_con{width:990px;margin:0 auto;position:relative}
+div.flicking_con .flicking_inner{position:absolute;top:380px;left:10px;z-index:999;width:300px;height:21px}
+div.flicking_con a{float:left;width:21px;height:21px;margin:0;padding:0;background:url('../images/btn_main_img.png') 0 0 no-repeat;display:block;text-indent:-1000px}
+div.flicking_con a.on{background-position:0 -21px}#btn_prev,#btn_next{z-index:11111;position:absolute;display:block;width:73px!important;height:74px!important;top:50%;margin-top:-37px;display:none}#btn_prev{background:url(../images/hover_left.png) no-repeat left top;left:10%}#btn_next{background:url(../images/hover_right.png) no-repeat right top;right:10%}
+
+/*简单幻灯片*/
+.bannerbox { width: 1172px; height: 447px; overflow: hidden; margin: 0px auto; }
+#focus { width: 1172px; height: 447px; clear: both; overflow: hidden; position: relative; float: left; }
+#focus ul { width: 1172px; height: 447px; float: left; position: absolute; clear: both; padding: 0px; margin: 0px; }
+#focus ul li { float: left; width: 1172px; height: 447px; overflow: hidden; position: relative; padding: 0px; margin: 0px; }
+#focus .preNext { width: 550px; height: 447px; position: absolute; top: 0px; cursor: pointer; }
+#focus .pre { left: 0; background: url(../images/sprite.png) no-repeat left center; }
+#focus .next { right: 0; background: url(../images/sprite1.png) no-repeat right center; }
+
+/*分页*/
+.pager { padding: 3px;color:#66C;font-size:12px;text-align:center}   
+.pager a { margin: 2px; padding:2px 5px; color: #66C; text-decoration: none; border: 1px solid #aad; }   
+.pager a:hover { color: #000; border: 1px solid #009; background-color:#DCDCF3; }   
+.pager span.current { font-weight: bold; margin: 0 2px; padding: 2px 5px; color: #fff; background-color: #66C; border: 1px solid #009; }   
+.pager span.disabled { margin: 0 2px; padding: 2px 5px; color: #CCC; border: 1px solid #DDD; } 
+.pager span.info { margin: 0 2px; padding: 2px 5px; color:green; border: 1px solid #999; }   
+.pager select {margin: 0px 2px -2px 2px; color:#66C;font-size:12px; }   
+.pager input {margin: 0px 2px -2px 2px; color:#66C; border: 1px solid #DDD; padding:2px; text-align:center;font-size:12px; } 
+
+/*qq*/
+.qqonline{width:130px;position:absolute;right:10px;top:200px;background:#e6eff8 url(../images/qq_bg.jpg) top center no-repeat;padding:163px 0 0 0;border:1px solid #DDD;}
+.qqonline ul{margin:0;padding:0 0 10px 0;list-style-type:none;}
+.qqonline ul li{margin:0;padding:0 0 0 20px;font-size:14px;font-family:"微软雅黑"}
+.qqonline a:link,.qqonline a:visited{text-decoration:none;color:#666;}
+.qqonline a:hover{color:blue;text-decoration:underline;}
+.weixinbox{text-align:center;line-height:30px;font-family:"微软雅黑"}
+.weixinbox img{width:115px;height:115px;border:1px solid #DDD;}
+
+
+/*适配手机*/
+@media screen and (max-width: 600px) {
+    body{padding-top:70px;}
+	.text img{max-width:100%;}
+	h1{margin-top:10px;}
+	.cd-top {right: 20px;bottom: 20px;}
+  }
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(232, 98, 86, 0.8) url(../images/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* 如果用户继续向下滚动,这个按钮的透明度会变得更低 */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}  

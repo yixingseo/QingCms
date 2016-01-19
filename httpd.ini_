@@ -1,0 +1,10 @@
+[ISAPI_Rewrite]
+
+# 3600 = 1 hour
+
+RepeatLimit 32
+
+#主导航规则区
+RewriteRule /index.html /index.asp
+RewriteRule /(.*) /\?/$1
+RewriteRule /admin/(.*) /admin/$1

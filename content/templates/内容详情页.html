@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{#sort.title}-{#site.title}</title>
+{#site.meta}
+<!-- bootstrap -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<!-- awesome -->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+</head>
+  <body>
+
+<!--#include file="header.htm" -->
+
+<div class="main">
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <!--#include file="sidebar.htm" -->
+    </div>
+    <div class="col-md-9">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="pull-left">
+            <strong><i class="icon-circle-arrow-right"></i> {#sort.title}</strong>
+          </div>
+          <div class="pull-right">您的位置：{#site.title} / {#sort.title} / 正文</div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="panel-body">
+          <h1>{#news.title}</h1>
+          <div class="text">{#news.content}</div>
+
+<nav>
+  <ul class="pager">
+    <li class="previous">{#news.prev}</li>
+    <li class="next">{#news.next}</li>
+  </ul>
+</nav>
+
+            
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!--#include file="footer.htm" -->
+
+</body>
+</html>

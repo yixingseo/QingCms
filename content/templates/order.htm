@@ -1,0 +1,77 @@
+<!-- 在线订购 -->
+<h3 style="background:#f1f1f1;margin:0 0 15px 0;padding:10px;font-size:16px"> <i class="icon-shopping-cart"></i> 在线订购</h3>
+ <div class="feedback">
+       
+   <form class="form-horizontal" method="post" id="fbform" action="data.asp?action=order">
+    <input type="hidden" value="{#news.id}" name="nid">
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="input01">姓名<span>*</span></label>
+      <div class="controls col-sm-5">
+       <input type="text" placeholder="姓名" class="form-control require" name="person" id="xingming" />
+       <p class="help-block">请输入您的姓名</p>
+      </div>
+     </div>
+     
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="input01">电话<span>*</span></label>
+      <div class="controls col-sm-5">
+       <input type="text" placeholder="区号+号码  010-12345678" class="form-control require" name="phone" id="dianhua" />
+       <p class="help-block">请输入您的电话</p>
+      </div>
+     </div>
+
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="input01">传真</label>
+      <div class="controls col-sm-5">
+       <input type="text" placeholder="区号+号码  010-12345678" class="form-control" name="mobile" id="chuanzhen" />
+       <p class="help-block">请输入您的传真</p>
+      </div> 
+     </div>
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="input01">E-mail</label>
+      <div class="controls col-sm-5">
+       <input type="text" placeholder="邮箱 mail@domain.com" class="form-control require" name="email" id="email" />
+       <p class="help-block">请输入您的邮箱</p>
+      </div>
+     </div>
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="input01">联系地址<span>*</span></label>
+      <div class="controls col-sm-9">
+       <input type="text" placeholder="XX省XX市XX路XX号" class="form-control require" name="address" id="lianxidizhi" />
+       <p class="help-block">请输入您的联系地址</p>
+      </div>
+     </div>
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="content">留言内容</label>
+      <div class="controls col-sm-9">
+       <textarea class="form-control" rows="3" name="content"></textarea>
+      </div>
+     </div>
+     <div class="form-group">
+      <label class="control-label col-sm-2"></label>
+      <div class="controls col-sm-9">
+       <button class="btn btn-primary" type="submit" id="jiameng_btn">我要订购</button>
+      </div>
+     </div>
+
+   </form>
+  </div>
+<script> 
+  $(function() {
+    //必填项
+    $('form').on("submit",function(e){
+      $(this).find('.require').each(function(){
+        var obj = $(this);
+        var objVal = obj.val();
+        if(obj.val() == '' || obj.val() == '0'){
+          obj.parent().parent().addClass('has-error');
+          obj.on('change',function(){
+            obj.parent().parent().removeClass('has-error');
+          })
+          e.preventDefault();
+        }
+      })
+    })
+}); 
+</script> 
+<!-- 在线留言.end -->

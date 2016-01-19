@@ -1,0 +1,25 @@
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="panel-title"><i class="fa fa-arrow-circle-right"></i> <strong>产品分类</strong></div>
+    </div>
+    <div class="list-group">
+      {#sort data="sort" pid="2"}
+      <a href="[sort.url]" class="list-group-item {if thisurl="[sort.url]"}active{/if}"> <strong>[sort.title]</strong></a>
+        {#sub data="sort" pid="[sort.id]"}
+          <a href="[sub.url]" class="list-group-item {if thisurl="[sub.url]"}active{/if}"> |-[sub.title]</a>
+        {/#sub}
+      {/#sort}
+    </div>
+</div>
+
+
+
+<div class="panel panel-default hidden-xs">
+    <div class="panel-heading">
+        <div class="panel-title"><i class="fa fa-arrow-circle-right"></i> <strong>联系我们</strong></div>
+    </div>
+    <div class="panel-body">
+           {#tag.contact}  
+    </div>
+</div>

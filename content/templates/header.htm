@@ -1,0 +1,17 @@
+<div class="header">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-3"><h2>{#site.title}</h2></div>
+            <div class="col-md-9" style="padding-top:20px">
+                <ul class="nav nav-pills">
+                    <li {if ishome}class="active"{/if}><a href="{#site.root}">网站首页</a></li>
+                    {#nav data="sort" pid="0" num="8"}
+                    <li {if thisurl="[nav.url]"}class="active"{/if}><a href="[nav.url]">[nav.title len="10"]</a></li>
+                    {/#nav}
+                </ul>
+            </div>
+        </div>
+    
+    </div>
+</div>
