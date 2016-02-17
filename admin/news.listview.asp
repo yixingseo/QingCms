@@ -64,7 +64,7 @@ dim sqlWhere,strKeywords
 </form>
 
 <%
-dim rs : set rs = db.listpage(strSql,2)
+dim rs : set rs = db.listpage(strSql,20)
 i = 0
 %>
 <table class="table table-bordered table-hover">
